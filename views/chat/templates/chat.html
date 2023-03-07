@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>OpenAI - Chat</title>
+  <script src="{{ url_for('static', filename='libs/tailwind/tailwindcss@3.2.6.js') }}"></script>
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='favicon.ico') }}"
+  />
+</head>
+<html>
+  <body
+    class="w-full bg-slate-800 h-full flex flex-col items-center justify-center"
+  >
+    <main>
+      <div class="pt-24">
+        <img
+          class="d-block mx-auto mb-4"
+          src="{{ url_for('static', filename='images/openai.png') }}"
+          alt="OpenAI Logo"
+          width="192"
+          height="192"
+        />
+        <a
+          href="{{ url_for('index') }}"
+          class="btn btn-primary btn-lg px-4 gap-3"
+          >Back home</a
+        >
+      </div>
+    </main>
+  </body>
+</html>
